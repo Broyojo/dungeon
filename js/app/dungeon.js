@@ -40,7 +40,7 @@ define(['lib/three', 'constants', 'party', 'direction'], function(THREE, Const, 
 
         addMeshesToScene: function(scene) {
             var material = new THREE.MeshPhongMaterial({map: texture});
-            var texture = THREE.ImageUtils.loadTexture('');
+            var texture = THREE.ImageUtils.loadTexture('media/concrete.png');
             var basicWallGeom = new THREE.BoxGeometry(1, 1, 1);
             var basicTileGeom = new THREE.PlaneGeometry(1, 1, 1);
             for (var y = 0; y < this.map.length; y++) {
